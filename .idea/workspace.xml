@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48fa4f81-9511-44d0-9754-c849dbc6e91f" name="Changes" comment=":wrench: Jest and Testing Library">
-      <change afterPath="$PROJECT_DIR$/components/button/button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/button/button.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/components/button.stories.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/button/my-button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stories/components/my-button.stories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <list id="97bce1a8-2208-4fb7-b93e-074ccdd568b0" name="Do not touch" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-y-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="97bce1a8-2208-4fb7-b93e-074ccdd568b0" name="Do not touch" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +65,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28XaIYp1arzwdT6XfAdPoDK4CBs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -101,7 +95,7 @@
       <recent name="$PROJECT_DIR$/stories/components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Home (2)">
+  <component name="RunManager" selected="npm.storybook">
     <configuration name="Home (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -160,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Home (2)" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.storybook" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Jest.Home (2)" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.Home (1)" />
       </list>
