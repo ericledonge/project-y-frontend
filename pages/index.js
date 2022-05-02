@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
+
 import Head from "next/head";
-import Image from "next/image";
+
 import styles from "../styles/Home.module.css";
 
 import "@fontsource/roboto/300.css";
@@ -8,6 +10,20 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Home() {
+  const [games, setGames] = useState([]);
+
+  useEffect(() => {
+    const fetchGames = async () => {
+      const response = await fetch(
+        "https://projectyquebec.azurewebsites.net/api/v1/Product/all"
+      );
+      const data = await response.json();
+      setGames(data);
+    };
+
+    fetchGames();
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,20 +37,13 @@ export default function Home() {
         />
       </Head>
 
-      <main className={styles.main}>Project Y</main>
+      <main className={styles.main}>
+        <h1>Project Y</h1>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        {games.map((game) => (
+          <div key={game.name}>{game.name}</div>
+        ))}
+      </main>
     </div>
   );
 }
