@@ -1,28 +1,10 @@
-import { useEffect, useState } from "react";
-
 import Head from "next/head";
-
 import styles from "../styles/Home.module.css";
 
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import useFetchGames from "../hooks/useFetchGames";
 
 export default function Home() {
-  const [games, setGames] = useState([]);
-
-  useEffect(() => {
-    const fetchGames = async () => {
-      const response = await fetch(
-        "https://projectyquebec.azurewebsites.net/api/v1/Product/all"
-      );
-      const data = await response.json();
-      setGames(data);
-    };
-
-    fetchGames();
-  }, []);
+  const { games, isLoading, isError } = useFetchGames();
 
   return (
     <div className={styles.container}>
@@ -40,9 +22,13 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Project Y</h1>
 
-        {games.map((game) => (
-          <div key={game.name}>{game.name}</div>
-        ))}
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : isError ? (
+          <p>Error...</p>
+        ) : (
+          games?.map((game) => <div key={game.name}>{game.name}</div>)
+        )}
       </main>
     </div>
   );

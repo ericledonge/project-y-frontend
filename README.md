@@ -1,6 +1,6 @@
 # Netlify
 
-https://app.netlify.com/sites/profound-dolphin-0ab35c
+https://profound-dolphin-0ab35c.netlify.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
