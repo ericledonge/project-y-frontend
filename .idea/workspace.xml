@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48fa4f81-9511-44d0-9754-c849dbc6e91f" name="Changes" comment=":wrench: Jest and Testing Library">
-      <change afterPath="$PROJECT_DIR$/components/button/my-button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/components/my-button.stories.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/authentication/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/authentication/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/pages/home.stories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/stories/pages/home.stories.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="97bce1a8-2208-4fb7-b93e-074ccdd568b0" name="Do not touch" comment="" />
@@ -24,6 +22,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
@@ -176,6 +177,7 @@
       <workItem from="1651366685473" duration="1021000" />
       <workItem from="1651367710517" duration="257000" />
       <workItem from="1651367970734" duration="2693000" />
+      <workItem from="1651588892653" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary=":wrench: Prettier">
       <created>1651366344449</created>
