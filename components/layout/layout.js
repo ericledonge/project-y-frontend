@@ -1,13 +1,11 @@
-import Header from "../header/header";
 import NavBar from "../navbar/navbar";
 
 const Layout = (props) => (
   <div className="Layout" style={layoutStyle}>
-    <Header />
-    <div className="Content" style={contentStyle}>
-      {props.children}
-    </div>
     <NavBar />
+    <main className="Content" style={contentStyle}>
+      {props.children}
+    </main>
   </div>
 );
 
