@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react";
 import Head from "next/head";
 
@@ -22,6 +23,8 @@ export default function Home() {
         <h1 className="text-3xl font-bold underline text-cyan-800">
           Project Y
         </h1>
+
+        <button className="bg-indigo-500">Button</button>
 
         {isLoading ? (
           <p>Loading...</p>
