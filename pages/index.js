@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import Head from "next/head";
 
 import useFetchGames from "../hooks/useFetchGames";
+import { supabase } from "../libs/supabaseClient";
 
 export default function Home() {
   const { games, isLoading, isError } = useFetchGames();
+
+  useEffect(() => {
+    console.log(supabase.auth.user())
+  }, [])
 
   return (
     <div>

@@ -1,4 +1,4 @@
-import Home from "../../pages/index.page";
+import Home from "../../pages/index";
 
 export default {
   title: "Pages/Home",
