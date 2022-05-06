@@ -9,13 +9,13 @@ export default function Home() {
   const { games, isLoading, isError } = useFetchGames();
 
   useEffect(() => {
-    console.log(supabase.auth.user())
-  }, [])
+    console.log(supabase.auth.user());
+  }, []);
 
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Project Y</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
