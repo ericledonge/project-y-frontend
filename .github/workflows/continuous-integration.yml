@@ -1,8 +1,10 @@
 name: CI
 
 on:
-  push:
   pull_request:
+  push:
+    branches:
+      - master
 
   workflow_dispatch:
 
@@ -25,4 +27,4 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Unit Tests
-        run: test:unit
+        run: yarn test:unit
