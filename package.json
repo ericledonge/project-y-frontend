@@ -9,7 +9,9 @@
     "lint": "next lint",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -s public",
-    "test": "yarn jest"
+    "test:unit": "jest",
+    "test:e2e": "npx playwright test",
+    "test:e2e:headed": "npx playwright test --headed"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
+    "@playwright/test": "^1.21.1",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
