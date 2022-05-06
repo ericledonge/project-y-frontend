@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Echo Variable
-        run: echo "The URL is ${{ secrets.Production.NEXT_PUBLIC_SUPABASE_URL }}"
+        run: echo "The URL is ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}"
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Build
