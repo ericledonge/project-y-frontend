@@ -16,3 +16,13 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Lint
         run: yarn lint
+
+  unit-test:
+    name: Unit Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Unit Tests
+        run: test:unit
